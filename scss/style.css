@@ -1,0 +1,260 @@
+@import url(init.css);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+body {
+  background: hsl(226, 43%, 10%);
+  font-family: "Rubik", "Rubik Light", system-ui;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+button {
+  background: none;
+  border: none;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+}
+
+main {
+  max-width: 1140px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: 254px 1fr;
+  gap: 1.8rem;
+}
+
+.dashboard-info {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.presentation-section {
+  background-color: hsl(246, 80%, 60%);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+}
+.presentation-section .avatar-img {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2.5rem;
+}
+.presentation-section .avatar-img img {
+  width: 5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.presentation-section .avatar-info h1 {
+  font-size: 14px;
+  color: hsl(236, 100%, 87%);
+  margin-bottom: 0.5rem;
+}
+.presentation-section .avatar-info strong {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 300;
+}
+
+.dashboard-menu {
+  position: relative;
+  background-color: hsl(235, 46%, 20%);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+}
+.dashboard-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: hsl(235, 46%, 20%);
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left: 0;
+  z-index: -1;
+}
+.dashboard-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.dashboard-menu button {
+  font-size: 16px;
+}
+.dashboard-menu button.active {
+  color: white;
+}
+
+.dashboard-activity {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(254px, 100%), 1fr));
+  gap: 1.8rem;
+}
+
+.activity-card .activity-illustration {
+  padding: 0 2rem;
+  height: 44px;
+  border-radius: 15px;
+  position: relative;
+}
+.activity-card .activity-illustration::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+}
+.activity-card .activity-illustration div {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  height: 100%;
+}
+.activity-card .work {
+  background-color: hsl(15, 100%, 70%);
+}
+.activity-card .work div {
+  background-image: url(../images/icon-work.svg);
+}
+.activity-card .work::after {
+  background-color: hsl(15, 100%, 70%);
+}
+.activity-card .play {
+  background-color: hsl(195, 74%, 62%);
+}
+.activity-card .play div {
+  background-image: url(../images/icon-play.svg);
+}
+.activity-card .play::after {
+  background-color: hsl(195, 74%, 62%);
+}
+.activity-card .study {
+  background-color: hsl(348, 100%, 68%);
+}
+.activity-card .study div {
+  background-image: url(../images/icon-study.svg);
+}
+.activity-card .study::after {
+  background-color: hsl(348, 100%, 68%);
+}
+.activity-card .exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.activity-card .exercise div {
+  background-image: url(../images/icon-exercise.svg);
+}
+.activity-card .exercise::after {
+  background-color: hsl(145, 58%, 55%);
+}
+.activity-card .social {
+  background-color: hsl(264, 64%, 52%);
+}
+.activity-card .social div {
+  background-image: url(../images/icon-social.svg);
+}
+.activity-card .social::after {
+  background-color: hsl(264, 64%, 52%);
+}
+.activity-card .self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+.activity-card .self-care div {
+  background-image: url(../images/icon-self-care.svg);
+}
+.activity-card .self-care::after {
+  background-color: hsl(43, 84%, 65%);
+}
+.activity-card .activity-info {
+  background-color: hsl(235, 46%, 20%);
+  padding: 2rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.activity-card .activity-info:hover {
+  background-color: #373f95;
+}
+.activity-card .activity-info button {
+  font-size: 25px;
+}
+.activity-card .activity-info .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.activity-card .activity-info .infos p {
+  color: hsl(236, 100%, 87%);
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.activity-card .activity-info .infos p:last-of-type {
+  margin-top: 0.5rem;
+}
+.activity-card .activity-info .infos strong {
+  font-weight: 300;
+  font-size: 48px;
+  color: white;
+}
+
+@media (width <= 992px) {
+  main {
+    max-width: 960px;
+  }
+}
+@media (width < 850px) {
+  main {
+    max-width: 720px;
+    grid-template-columns: minmax(254px, 1fr);
+  }
+  .dashboard-info {
+    grid-template-rows: auto auto;
+  }
+  .presentation-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 2.5rem;
+  }
+  .presentation-section .avatar-img {
+    margin-bottom: auto;
+  }
+  .dashboard-menu {
+    padding: 2rem;
+  }
+  .dashboard-menu ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (width <= 576px) {
+  main {
+    max-width: 540px;
+  }
+  .presentation-section .avatar-info strong {
+    font-size: 22px;
+  }
+  .activity-card .activity-info .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .activity-card .activity-info .infos p:last-of-type {
+    margin-top: auto;
+  }
+  .activity-card .activity-info .infos strong {
+    font-size: 38px;
+  }
+}/*# sourceMappingURL=style.css.map */

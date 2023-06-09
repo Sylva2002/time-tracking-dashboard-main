@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <script src="Js/script.js" defer></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="dashboard-info">
+        <section class="presentation-section">
+          <div class="avatar-img">
+            <img src="images/image-jeremy.png" alt="" />
+          </div>
+          <div class="avatar-info">
+            <h1>Report for</h1>
+            <p><strong> Jeremy Robson </strong></p>
+          </div>
+        </section>
+        <section class="dashboard-menu">
+          <nav>
+            <ul>
+              <li>
+                <button value="daily" href="#" class="menu-btn active">
+                  Daily
+                </button>
+              </li>
+              <li>
+                <button value="weekly" href="#" class="menu-btn">Weekly</button>
+              </li>
+              <li>
+                <button value="monthly" href="#" class="menu-btn">
+                  Monthly
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+      <section class="dashboard-activity">
+        <div class="activity-card">
+          <div class="activity-illustration work">
+            <div></div>
+          </div>
+          <div class="activity-info">
+            <div class="title">
+              <h2>Work</h2>
+              <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+            </div>
+
+            <div class="infos">
+              <p>
+                <strong> <span class="current"> 0</span>hrs </strong>
+              </p>
+              <p>
+                <span class="period"> week </span> -
+                <span class="previous"> 0</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-illustration play">
+            <div></div>
+          </div>
+          <div class="activity-info">
+            <div class="title">
+              <h2>Play</h2>
+              <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+            </div>
+
+            <div class="infos">
+              <p>
+                <strong> <span class="current"> 0</span>hrs </strong>
+              </p>
+              <p>
+                <span class="period"> week </span> -
+                <span class="previous"> 0</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-illustration study">
+            <div></div>
+          </div>
+          <div class="activity-info">
+            <div class="title">
+              <h2>Study</h2>
+              <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+            </div>
+
+            <div class="infos">
+              <p>
+                <strong> <span class="current"> 0</span>hrs </strong>
+              </p>
+              <p>
+                <span class="period"> week </span> -
+                <span class="previous"> 0</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-illustration exercise">
+            <div></div>
+          </div>
+          <div class="activity-info">
+            <div class="title">
+              <h2>Exercise</h2>
+              <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+            </div>
+
+            <div class="infos">
+              <p>
+                <strong> <span class="current"> 0</span>hrs </strong>
+              </p>
+              <p>
+                <span class="period"> week </span> -
+                <span class="previous"> 0</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-illustration social">
+            <div></div>
+          </div>
+          <div class="activity-info">
+            <div class="title">
+              <h2>Social</h2>
+              <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+            </div>
+
+            <div class="infos">
+              <p>
+                <strong> <span class="current"> 0</span>hrs </strong>
+              </p>
+              <p>
+                <span class="period"> week </span> -
+                <span class="previous"> 0</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-illustration self-care">
+            <div></div>
+          </div>
+          <div class="activity-info">
+            <div class="title">
+              <h2>Self Care</h2>
+              <button><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+            </div>
+
+            <div class="infos">
+              <p>
+                <strong> <span class="current"> 0</span>hrs </strong>
+              </p>
+              <p>
+                <span class="period"> week </span> -
+                <span class="previous"> 0</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer> -->
+  </body>
+</html>
